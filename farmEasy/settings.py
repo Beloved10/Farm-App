@@ -18,8 +18,6 @@ DEBUG = os.environ['DEBUG']
 
 ALLOWED_HOSTS = ['*']
 
-# CSRF_TRUSTED_ORIGNS = ['https://farm-easy.azurewebsites.net']
-
 
 # Application definition
 
