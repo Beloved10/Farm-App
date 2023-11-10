@@ -18,7 +18,7 @@ DEBUG = os.environ['DEBUG']
 
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
 
-CSRF_TRUSTED_ORIGNS = ['htpps://' + os.environ['WEBSITE_HOSTNAME']]
+CSRF_TRUSTED_ORIGNS = ['https://' + os.environ['WEBSITE_HOSTNAME']]
 
 
 # Application definition
