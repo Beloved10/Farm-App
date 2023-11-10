@@ -16,9 +16,9 @@ SECRET_KEY = os.environ['SECRET']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ['DEBUG']
 
-ALLOWED_HOSTS = ['farm-easy.azurewebsites.net']
+ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGNS = ['https://farm-easy.azurewebsites.net']
+# CSRF_TRUSTED_ORIGNS = ['https://farm-easy.azurewebsites.net']
 
 
 # Application definition
