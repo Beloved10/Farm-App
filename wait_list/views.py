@@ -6,9 +6,13 @@ from .models import WaitList
 from .serializers import WaitListCreateSerializer, WaitListSerializer
 
 
-class WaitListCreateAPIView(CreateAPIView):
-    queryset = WaitList.objects.all()
-    serializer_class = WaitListCreateSerializer
+class WaitListCreateAPIView(APIView):
+    def post(self, request, *args, **kwargs):
+        serializer = WaitListCreateSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 class WaitListView(APIView):
