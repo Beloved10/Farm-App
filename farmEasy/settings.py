@@ -164,8 +164,8 @@ USE_TZ = True
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 
-CORS_ALLOWED_ORIGINS = ('https://farmeasy.vercel.app/',
-                        'http://127.0.0.1:5500',)
+# CORS_ALLOWED_ORIGINS = ('https://farmeasy.vercel.app/',
+#                         'http://127.0.0.1:5500',)
 
 CORS_ORIGIN_WHITELIST = (
     "http://localhost:3000",
